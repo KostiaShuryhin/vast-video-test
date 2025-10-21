@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="2.0">
+  <Ad id="111129">
+    <InLine>
+      <AdSystem>Appodeal Inc.</AdSystem>
+      <AdTitle>Direct Offer Video Ad</AdTitle>
+
+      <!-- Impression: основной трекинг показа -->
+      <Impression><![CDATA[
+https://track.appodeal.com/impression?adid={%ADVERTISING_ID%}&bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}
+      ]]></Impression>
+
+      <Creatives>
+        <Creative>
+          <Linear>
+            <Duration>00:00:26</Duration>
+
+            <TrackingEvents>
+              <Tracking event="start"><![CDATA[
+https://view.adjust.com/impression/1t3patlq?campaign=PizzaReadyFull&adgroup=Interstitial&creative=CP_1_CPI_v2
+              ]]></Tracking>
+              <Tracking event="complete"><![CDATA[
+https://track.appodeal.com/complete
+              ]]></Tracking>
+            </TrackingEvents>
+
+            <VideoClicks>
+              <ClickThrough><![CDATA[
+https://www.google.com/
+              ]]></ClickThrough>
+              <ClickTracking><![CDATA[
+https://track.appodeal.com/click?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}
+              ]]></ClickTracking>
+            </VideoClicks>
+
+            <MediaFiles>
+              <MediaFile delivery="progressive" type="video/mp4" width="720" height="1280" scalable="true" maintainAspectRatio="true">
+https://kostiashuryhin.github.io/vast-video-test/HPT_vid011_25.mp4
+              </MediaFile>
+            </MediaFiles>
+
+          </Linear>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+</VAST>
