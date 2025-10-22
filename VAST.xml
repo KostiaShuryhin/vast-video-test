@@ -16,7 +16,7 @@
       <Creatives>
         <Creative AdID="29161">
           <Linear>
-            <Duration>00:00:22</Duration>
+            <Duration>00:00:29</Duration>
 
             <TrackingEvents>
               <Tracking event="creativeView"><![CDATA[https://track.appodeal.com/creativeview?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Tracking>
@@ -40,7 +40,7 @@
             </VideoClicks>
 
             <MediaFiles>
-              <MediaFile delivery="progressive" type="video/mp4" width="720" height="1280" scalable="true" maintainAspectRatio="true"><![CDATA[https://kostiashuryhin.github.io/vast-video-test/HPT_vid011_25.mp4]]></MediaFile>
+              <MediaFile delivery="progressive" type="video/mp4" width="720" height="1280" scalable="true" maintainAspectRatio="true"><![CDATA[https://kostiashuryhin.github.io/vast-video-test/Test29.mp4]]></MediaFile>
             </MediaFiles>
           </Linear>
         </Creative>
