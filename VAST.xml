@@ -4,22 +4,34 @@
     <InLine>
       <AdSystem>Appodeal Inc.</AdSystem>
       <AdTitle>Direct Offer Video Ad</AdTitle>
+      <Description>Direct Offer Video Ad</Description>
 
+      <!-- Error c кодом ошибки и идентификацией приложения -->
       <Error><![CDATA[https://track.appodeal.com/error?code=[ERRORCODE]&bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Error>
 
+      <!-- Impression: основной и Adjust -->
       <Impression><![CDATA[https://track.appodeal.com/impression?adid={%ADVERTISING_ID%}&bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Impression>
       <Impression><![CDATA[https://view.adjust.com/impression/1t3patlq?campaign=PizzaReadyFull&adgroup=Interstitial&creative=CP_1_CPI_v2]]></Impression>
 
       <Creatives>
-        <Creative>
+        <Creative AdID="139475">
           <Linear>
-            <Duration>00:00:25</Duration>
+            <!-- Выровняй под реальную длину файла -->
+            <Duration>00:00:22</Duration>
+
             <TrackingEvents>
               <Tracking event="start"><![CDATA[https://track.appodeal.com/start?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Tracking>
               <Tracking event="firstQuartile"><![CDATA[https://track.appodeal.com/q1?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Tracking>
               <Tracking event="midpoint"><![CDATA[https://track.appodeal.com/q2?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Tracking>
               <Tracking event="thirdQuartile"><![CDATA[https://track.appodeal.com/q3?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Tracking>
               <Tracking event="complete"><![CDATA[https://track.appodeal.com/complete?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Tracking>
+              <Tracking event="mute"><![CDATA[https://track.appodeal.com/mute?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Tracking>
+              <Tracking event="unmute"><![CDATA[https://track.appodeal.com/unmute?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Tracking>
+              <Tracking event="pause"><![CDATA[https://track.appodeal.com/pause?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Tracking>
+              <Tracking event="resume"><![CDATA[https://track.appodeal.com/resume?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Tracking>
+              <Tracking event="fullscreen"><![CDATA[https://track.appodeal.com/fullscreen?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Tracking>
+              <Tracking event="exitFullscreen"><![CDATA[https://track.appodeal.com/exitfullscreen?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Tracking>
+              <Tracking event="close"><![CDATA[https://track.appodeal.com/close?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Tracking>
             </TrackingEvents>
 
             <VideoClicks>
@@ -28,9 +40,23 @@
             </VideoClicks>
 
             <MediaFiles>
-              <MediaFile delivery="progressive" type="video/mp4" width="720" height="1280" scalable="true" maintainAspectRatio="true"><![CDATA[https://kostiashuryhin.github.io/vast-video-test/HPT_vid011_25.mp4]]></MediaFile>
+              <MediaFile delivery="progressive" type="video/mp4" width="720" height="1280" scalable="true" maintainAspectRatio="true"> https://kostiashuryhin.github.io/vast-video-test/HPT_vid011_25.mp4</MediaFile>
             </MediaFiles>
           </Linear>
+        </Creative>
+
+        <!-- Компаньоны: оставляем только валидные -->
+        <Creative AdID="139475-Companion">
+          <CompanionAds>
+            <Companion width="1600" height="900">
+              <StaticResource creativeType="image/jpeg"><![CDATA[https://eu-central-1.appodeal.com/appodeal-uploads/server/production/creative_item/image/creative_file/74315/91nmQ6qNysL.jpg]]></StaticResource>
+              <CompanionClickThrough><![CDATA[https://www.google.com/]]></CompanionClickThrough>
+            </Companion>
+            <Companion width="900" height="1600">
+              <StaticResource creativeType="image/png"><![CDATA[https://eu-central-1.appodeal.com/appodeal-uploads/server/production/creative_item/image/creative_file/74316/91x06TPMEWL.png]]></StaticResource>
+              <CompanionClickThrough><![CDATA[https://www.google.com/]]></CompanionClickThrough>
+            </Companion>
+          </CompanionAds>
         </Creative>
       </Creatives>
     </InLine>
