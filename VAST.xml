@@ -1,64 +1,54 @@
-<?xml version="1.0" encoding="UTF-8"?>
+?xml version="1.0" encoding="UTF-8"?>
 <VAST version="2.0">
   <Ad id="111129">
     <InLine>
       <AdSystem>Appodeal Inc.</AdSystem>
       <AdTitle>Direct Offer Video Ad</AdTitle>
       <Description>Direct Offer Video Ad</Description>
-
-      <!-- Error обязателен -->
-      <Error><![CDATA[https://track.appodeal.com/error?code=[ERRORCODE]&bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Error>
-
-      <!-- Impression: основной и Adjust -->
-      <Impression><![CDATA[https://track.appodeal.com/impression?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Impression>
-      <Impression><![CDATA[https://view.adjust.com/impression/1t3patlq?campaign=PizzaReadyFull&adgroup=Interstitial&creative=CP_1_CPI_v2]]></Impression>
-
+      <Survey/>
+      <Error/>
+      <Impression/>
       <Creatives>
-        <Creative AdID="29161">
+        <Creative AdID="139475">
           <Linear>
-            <Duration>00:00:29</Duration>
-
+            <Duration>00:00:26</Duration>
             <TrackingEvents>
-              <Tracking event="creativeView"><![CDATA[https://track.appodeal.com/creativeview?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Tracking>
-              <Tracking event="start"><![CDATA[https://track.appodeal.com/start?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Tracking>
-              <Tracking event="firstQuartile"><![CDATA[https://track.appodeal.com/q1?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Tracking>
-              <Tracking event="midpoint"><![CDATA[https://track.appodeal.com/q2?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Tracking>
-              <Tracking event="thirdQuartile"><![CDATA[https://track.appodeal.com/q3?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Tracking>
-              <Tracking event="complete"><![CDATA[https://track.appodeal.com/complete?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Tracking>
-
-              <Tracking event="mute"><![CDATA[https://track.appodeal.com/mute?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Tracking>
-              <Tracking event="unmute"><![CDATA[https://track.appodeal.com/unmute?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Tracking>
-              <Tracking event="pause"><![CDATA[https://track.appodeal.com/pause?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Tracking>
-              <Tracking event="resume"><![CDATA[https://track.appodeal.com/resume?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Tracking>
-              <Tracking event="fullscreen"><![CDATA[https://track.appodeal.com/fullscreen?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Tracking>
-              <Tracking event="close"><![CDATA[https://track.appodeal.com/close?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Tracking>
+              <Tracking event="start"><![CDATA[https://view.adjust.com/impression/1t3patlq?campaign=PizzaReadyFull&adgroup=Interstitial&creative=CP_1_CPI_v2]]></Tracking>
+              <Tracking event="firstQuartile"><![CDATA[]]></Tracking>
+              <Tracking event="midpoint"><![CDATA[]]></Tracking>
+              <Tracking event="thirdQuartile"><![CDATA[]]></Tracking>
+              <Tracking event="complete"><![CDATA[]]></Tracking>
+              <Tracking event="creativeView"><![CDATA[]]></Tracking>
+              <Tracking event="mute"><![CDATA[]]></Tracking>
+              <Tracking event="unmute"><![CDATA[]]></Tracking>
+              <Tracking event="pause"><![CDATA[]]></Tracking>
+              <Tracking event="resume"><![CDATA[]]></Tracking>
+              <Tracking event="fullscreen"><![CDATA[]]></Tracking>
             </TrackingEvents>
-
             <VideoClicks>
               <ClickThrough><![CDATA[https://www.google.com/]]></ClickThrough>
-              <ClickTracking><![CDATA[https://track.appodeal.com/click?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></ClickTracking>
+              <ClickTracking><![CDATA[https://www.google.com/]]></ClickTracking>
             </VideoClicks>
-
             <MediaFiles>
-              <MediaFile delivery="progressive" type="video/mp4" width="720" height="1280" scalable="true" maintainAspectRatio="true"><![CDATA[https://kostiashuryhin.github.io/vast-video-test/Test29.mp4]]></MediaFile>
+              <MediaFile delivery="progressive" type="video/mp4" bitrate="2716217" duration="00:00:26" width="720" height="1280" scalable="true" maintainAspectRatio="true">https://eu-central-1.appodeal.com/appodeal-uploads/server/production/creative_item/video/creative_file/74317/compressed_CP_1_CPI_v2.mp4</MediaFile>
             </MediaFiles>
           </Linear>
         </Creative>
-
         <Creative AdID="139475-Companion">
           <CompanionAds>
             <Companion width="1600" height="900">
-              <StaticResource creativeType="image/jpeg"><![CDATA[https://eu-central-1.appodeal.com/appodeal-uploads/server/production/creative_item/image/creative_file/74315/91nmQ6qNysL.jpg]]></StaticResource>
+              <StaticResource creativeType="mime_type"><![CDATA[https://eu-central-1.appodeal.com/appodeal-uploads/server/production/creative_item/image/creative_file/74315/91nmQ6qNysL.jpg]]></StaticResource>
               <CompanionClickThrough><![CDATA[https://www.google.com/]]></CompanionClickThrough>
             </Companion>
+            <Companion></Companion>
             <Companion width="900" height="1600">
-              <StaticResource creativeType="image/png"><![CDATA[https://eu-central-1.appodeal.com/appodeal-uploads/server/production/creative_item/image/creative_file/74316/91x06TPMEWL.png]]></StaticResource>
+              <StaticResource creativeType="mime_type"><![CDATA[https://eu-central-1.appodeal.com/appodeal-uploads/server/production/creative_item/image/creative_file/74316/91x06TPMEWL.png]]></StaticResource>
               <CompanionClickThrough><![CDATA[https://www.google.com/]]></CompanionClickThrough>
             </Companion>
+            <Companion></Companion>
           </CompanionAds>
         </Creative>
       </Creatives>
     </InLine>
   </Ad>
 </VAST>
-
