@@ -6,31 +6,31 @@
       <AdTitle>Direct Offer Video Ad</AdTitle>
       <Description>Direct Offer Video Ad</Description>
 
-      <!-- Error c кодом ошибки и идентификацией приложения -->
+      <!-- Error обязателен -->
       <Error><![CDATA[https://track.appodeal.com/error?code=[ERRORCODE]&bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Error>
 
       <!-- Impression: основной и Adjust -->
-      <Impression><![CDATA[https://track.appodeal.com/impression?adid={%ADVERTISING_ID%}&bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Impression>
+      <Impression><![CDATA[https://track.appodeal.com/impression?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Impression>
       <Impression><![CDATA[https://view.adjust.com/impression/1t3patlq?campaign=PizzaReadyFull&adgroup=Interstitial&creative=CP_1_CPI_v2]]></Impression>
 
       <Creatives>
-        <Creative AdID="139475">
+        <Creative AdID="29161">
           <Linear>
-            <!-- Выровняй под реальную длину файла -->
             <Duration>00:00:22</Duration>
 
             <TrackingEvents>
+              <Tracking event="creativeView"><![CDATA[https://track.appodeal.com/creativeview?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Tracking>
               <Tracking event="start"><![CDATA[https://track.appodeal.com/start?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Tracking>
               <Tracking event="firstQuartile"><![CDATA[https://track.appodeal.com/q1?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Tracking>
               <Tracking event="midpoint"><![CDATA[https://track.appodeal.com/q2?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Tracking>
               <Tracking event="thirdQuartile"><![CDATA[https://track.appodeal.com/q3?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Tracking>
               <Tracking event="complete"><![CDATA[https://track.appodeal.com/complete?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Tracking>
+
               <Tracking event="mute"><![CDATA[https://track.appodeal.com/mute?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Tracking>
               <Tracking event="unmute"><![CDATA[https://track.appodeal.com/unmute?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Tracking>
               <Tracking event="pause"><![CDATA[https://track.appodeal.com/pause?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Tracking>
               <Tracking event="resume"><![CDATA[https://track.appodeal.com/resume?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Tracking>
               <Tracking event="fullscreen"><![CDATA[https://track.appodeal.com/fullscreen?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Tracking>
-              <Tracking event="exitFullscreen"><![CDATA[https://track.appodeal.com/exitfullscreen?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Tracking>
               <Tracking event="close"><![CDATA[https://track.appodeal.com/close?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Tracking>
             </TrackingEvents>
 
@@ -40,12 +40,11 @@
             </VideoClicks>
 
             <MediaFiles>
-              <MediaFile delivery="progressive" type="video/mp4" width="720" height="1280" scalable="true" maintainAspectRatio="true"> https://kostiashuryhin.github.io/vast-video-test/HPT_vid011_25.mp4</MediaFile>
+              <MediaFile delivery="progressive" type="video/mp4" width="720" height="1280" scalable="true" maintainAspectRatio="true"><![CDATA[https://kostiashuryhin.github.io/vast-video-test/HPT_vid011_25.mp4]]></MediaFile>
             </MediaFiles>
           </Linear>
         </Creative>
 
-        <!-- Компаньоны: оставляем только валидные -->
         <Creative AdID="139475-Companion">
           <CompanionAds>
             <Companion width="1600" height="900">
@@ -62,3 +61,4 @@
     </InLine>
   </Ad>
 </VAST>
+
