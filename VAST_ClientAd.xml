@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="2.0">
+  <Ad id="111129">
+    <InLine>
+      <AdSystem>Appodeal Inc.</AdSystem>
+      <AdTitle>Direct Offer Video Ad</AdTitle>
+      <Description>Direct Offer Video Ad</Description>
+
+      <Error><![CDATA[https://track.appodeal.com/error?code=[ERRORCODE]&bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Error>
+
+      <!-- Impression: основной и Adjust -->
+      <Impression><![CDATA[https://track.appodeal.com/impression?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Impression>
+      <Impression><![CDATA[https://view.adjust.com/impression/1t3patlq?campaign=PizzaReadyFull&adgroup=Interstitial&creative=CP_1_CPI_v2]]></Impression>
+
+      <Creatives>
+        <Creative AdID="139475">
+          <Linear>
+            <Duration>00:00:22</Duration>
+
+            <TrackingEvents>
+              <Tracking event="start"><![CDATA[https://track.appodeal.com/start?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Tracking>
+              <Tracking event="firstQuartile"><![CDATA[https://track.appodeal.com/q1?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Tracking>
+              <Tracking event="midpoint"><![CDATA[https://track.appodeal.com/q2?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Tracking>
+              <Tracking event="thirdQuartile"><![CDATA[https://track.appodeal.com/q3?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Tracking>
+              <Tracking event="complete"><![CDATA[https://track.appodeal.com/complete?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></Tracking>
+            </TrackingEvents>
+
+            <VideoClicks>
+              <ClickThrough><![CDATA[https://www.google.com/]]></ClickThrough>
+              <ClickTracking><![CDATA[https://track.appodeal.com/click?bundle={%APP_BUNDLE_ID%}&cb={%CACHEBUSTER%}]]></ClickTracking>
+            </VideoClicks>
+
+            <MediaFiles>
+              <MediaFile delivery="progressive" type="video/mp4" width="720" height="1280" scalable="true" maintainAspectRatio="true"><![CDATA[https://kostiashuryhin.github.io/vast-video-test/HPT_vid011_25.mp4]]></MediaFile>
+            </MediaFiles>
+          </Linear>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+</VAST>
