@@ -31,7 +31,7 @@
             </VideoClicks>
 
             <MediaFiles>
-              <MediaFile delivery="progressive" type="video/mp4" width="720" height="1280" scalable="true" maintainAspectRatio="true"><![CDATA[https://kostiashuryhin.github.io/vast-video-test/HPT_vid011_25.mp4]]></MediaFile>
+              <MediaFile delivery="progressive" type="video/mp4" width="540" height="960" scalable="true" maintainAspectRatio="true"><![CDATA[https://kostiashuryhin.github.io/vast-video-test/HPT_vid011_25.mp4]]></MediaFile>
             </MediaFiles>
           </Linear>
         </Creative>
